@@ -5,11 +5,15 @@
 
 <h3> In Case You Need Motivation: </h3>
 
+<p>
+
 Guys! 
 
 Look where we are. In 34 in the entire nation. The place where we are going to is not your usual competition. Just imagine, you are a "developer" now. Isn't that exciting enough? All those bug fixes, all those all-nighters, all the pain will be worth it, I promise. Resilience...Resilience is key.  Keep at it. It will all be worth it with that check in your hand.
 
 Keep at it. I trust you guys! Heptad is the fucking best!
+
+</p>
 
 <h3>The real shit: Github CLI </h3>
 
