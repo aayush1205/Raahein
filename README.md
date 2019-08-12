@@ -1,2 +1,1 @@
-# Raahein
-A Team attempt to simplify and solve the PUBLIC TRANSPORTATION PROBLEM in India through an app and hence, increase its usage amongst  people.
+<img src="images_git/" alt="Smiley face" align="middle"> 
