@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter/services.dart';
+import 'package:barcode_scan/barcode_scan.dart';
+
+
+
 
 void main() => runApp(MyApp());
 
@@ -27,10 +31,42 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  MyHomePageState createState() => MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePageState extends State<MyHomePage> {
+
+  String result = "Hey there !";
+
+
+  Future _scanQR() async {
+    try {
+      String qrResult = await BarcodeScanner.scan();
+      setState(() {
+        result = qrResult;
+        openCheckout();
+      });
+    } on PlatformException catch (ex) {
+      if (ex.code == BarcodeScanner.CameraAccessDenied) {
+        setState(() {
+          result = "Camera permission was denied";
+        });
+      } else {
+        setState(() {
+          result = "Unknown Error $ex";
+        });
+      }
+    } on FormatException {
+      setState(() {
+        result = "You pressed the back button before scanning anything";
+      });
+    } catch (ex) {
+      setState(() {
+        result = "Unknown Error $ex";
+      });
+    }
+  }
+
   int totalAmount = 0;
   Razorpay _razorpay;
 
@@ -56,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var options = {
       'key' : 'rzp_test_XyoHRw6LGnq4bz',
       'amount' : totalAmount*100,
-      'name': "Something",
+      'name': "Ministry of Trasnportation",
       'description' : 'Test Pay',
       'prefil' : {'contact': '', 'email': ''},
       'external' : {
@@ -120,23 +156,29 @@ void _handleExternalWallet(ExternalWalletResponse response){
               height: 15.0,
               
             ),
-            RaisedButton(
-              color: Colors.teal,
-              child: Text("Make Payment",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold
-              ),), onPressed: () {
-
-                openCheckout();
-
-
-              },
-            ),
           ],
+        ),
       ),
-      ), 
+
+      floatingActionButton: FloatingActionButton.extended(
+      icon: Icon(Icons.camera_alt),
+      label: Text("Scan"),
+      onPressed: _scanQR,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat, 
     );
+
+
+      
+
+    
   }
 }
+            
+
+
+
+
+
+
+              
