@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "742032227558",
+    "firebase_url": "https://manaswita-d708e.firebaseio.com",
+    "project_id": "manaswita-d708e",
+    "storage_bucket": "manaswita-d708e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742032227558:android:e6c3cd30c24e15d1",
+        "android_client_info": {
+          "package_name": "com.example.manaswita_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742032227558-rv3i8kmro3ffarg1obd6cmmbdi4qrkaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbmEdJUUZBY6grYTi29RgwZVzfhbupNeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742032227558-rv3i8kmro3ffarg1obd6cmmbdi4qrkaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
