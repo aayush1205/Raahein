@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "800672109007",
+    "firebase_url": "https://login-dde6a.firebaseio.com",
+    "project_id": "login-dde6a",
+    "storage_bucket": "login-dde6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800672109007:android:7738fe742be9f442",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800672109007-gjk43hentbuddt6ubrqv5rjac5r1dv9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqYJSjt8hnIfcgkpoTTFPAW2pOCeef7CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800672109007-gjk43hentbuddt6ubrqv5rjac5r1dv9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
