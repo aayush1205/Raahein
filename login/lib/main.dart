@@ -37,12 +37,21 @@ class MyHomePage extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('RAAHEIN'),
+    return Scaffold(backgroundColor: Colors.black,
+      appBar: AppBar(backgroundColor: Colors.transparent,
+        centerTitle: true ,
+    title: Text('RAAHEIN',
+        style: TextStyle(color: Colors.red,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald',
+        fontSize: 29)),
         actions: <Widget>[
           FlatButton(
-              child: Text("Sign Out"),
+              child: Text('Sign Out',
+              style: TextStyle(color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald',
+        fontSize: 20)),
               onPressed: () async {
                 try {
                   Auth auth = Provider.of(context).auth;
@@ -55,7 +64,11 @@ class HomePage extends StatelessWidget {
       ),
       body: Container(
         child: Center(
-          child: Text('Welcome to RAAHEIN'),
+          child: Text('Welcome to Raahein !',
+          style: TextStyle(color: Colors.yellow,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Cinzel',
+        fontSize: 33)),
         ),
       ),
     );
@@ -125,9 +138,14 @@ class LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Form Page"),
+    return Scaffold(backgroundColor: Colors.black,
+      appBar: AppBar(backgroundColor: Colors.black,
+        centerTitle: true ,
+    title: Text('Form Page',
+        style: TextStyle(color: Colors.yellow,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald',
+        fontSize: 35)),
       ),
       body: Center(
         child: Form(
@@ -141,37 +159,103 @@ class LoginPageState extends State<LoginPage> {
   }
 
   List<Widget> buildInputs() {
-    return [
+    return [Container(
+  height: 40,
+),
       TextFormField(
         validator: EmailValidator.validate,
-        decoration: InputDecoration(labelText: "Email"),
-        onSaved: (value) => _email = value,
+        decoration: InputDecoration(
+
+              fillColor: Colors.black,
+              filled: true,
+              border: new OutlineInputBorder(
+
+                borderRadius: const BorderRadius.all(
+
+                  const Radius.circular(20.0),
+                ),
+                borderSide: new BorderSide(
+                  color: Colors.black,
+                  width: 1.0,
+                ),
+              ),
+              labelText: 'Email:',
+              labelStyle:
+                  new TextStyle(color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald',
+        fontSize: 20)),
+          style:
+              TextStyle(fontSize: 20.0, color: Colors.black,
+             fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald', ),
+        
+        onSaved: (value) => _password = value,
       ),
+      Container(
+  height: 10,
+),
+
       TextFormField(
         validator: PasswordValidator.validate,
-        decoration: InputDecoration(labelText: "Password"),
+        decoration: InputDecoration(
+
+              fillColor: Colors.black,
+              filled: true,
+              border: new OutlineInputBorder(
+
+                borderRadius: const BorderRadius.all(
+
+                  const Radius.circular(20.0),
+                ),
+                borderSide: new BorderSide(
+                  color: Colors.transparent,
+                  width: 1.0,
+                ),
+              ),
+              labelText: 'Password:',
+              labelStyle:
+                  new TextStyle(color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald',
+        fontSize: 20)),
+          style:
+              TextStyle(fontSize: 20.0, color: Colors.black,
+              fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald',),
         obscureText: true,
         onSaved: (value) => _password = value,
       ),
+
+
     ];
   }
 
   List<Widget> buildButtons() {
     if (_formType == FormType.login) {
-      return [
-        RaisedButton(
-          child: Text('Login'),
-          onPressed: submit,
-        ),
-        FlatButton(
-          child: Text('Register Account'),
-          onPressed: () {
+      return [Container(
+  height: 50,
+),
+        FloatingActionButton.extended(backgroundColor: Colors.black,
+  onPressed: submit,
+  icon: Icon(Icons.email),
+  label: Text("Login",),
+),
+Container(
+  height: 30,
+),
+    FloatingActionButton.extended(backgroundColor: Colors.black87,
+  onPressed: () {
             switchFormState('register');
           },
-        ),
-        FlatButton(
-          child: Text("Sign In With Google"),
-          onPressed: () async {
+  icon: Icon(Icons.edit),
+  label: Text("Register Account"),
+),
+Container(
+  height: 30,
+),
+FloatingActionButton.extended(backgroundColor: Colors.black,
+  onPressed: () async {
             try {
               final _auth = Provider.of(context).auth;
               final id = await _auth.signInWithGoogle();
@@ -180,7 +264,13 @@ class LoginPageState extends State<LoginPage> {
               print(e);
             }
           },
-        )
+  icon: Icon(Icons.email),
+  label: Text("Google Sign In"),
+),
+Container(
+  height: 20,
+),
+        
       ];
     } else {
       return [

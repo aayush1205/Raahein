@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Raahein',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blueGrey,
       ),
       home: MyHomePage(title: 'Raahein Payment Page'),
     );
@@ -28,7 +28,8 @@ class MyHomePage extends StatefulWidget {
   MyHomePageState createState() => MyHomePageState();
 }
 
-class MyHomePageState extends State<MyHomePage> {
+class MyHomePageState extends State<MyHomePage> 
+{
   String result = "Hey there !";
 
   Future _scanQR() async {
@@ -111,20 +112,54 @@ class MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+    return Scaffold(backgroundColor: Colors.black,
+      appBar: AppBar(backgroundColor: Colors.black,
+      centerTitle: true ,
+        title: Text('Payment Gateway',
+        style: TextStyle(color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Cinzel',
+        fontSize: 34)),
       ),
+      
+      
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          
           children: <Widget>[
+            Image.asset(
+                    "lib/images/pay.gif",
+                    height: 400.0,
+                    width: 400.0,
+                  ),
             LimitedBox(
               maxWidth: 150.0,
               child: TextField(
                 keyboardType: TextInputType.number,
                 decoration:
-                    InputDecoration(hintText: "Please enter the amount!"),
+                    InputDecoration(fillColor: Colors.black,
+              filled: true,
+              border: new OutlineInputBorder(
+
+                borderRadius: const BorderRadius.all(
+
+                  const Radius.circular(15.0),
+                ),
+                borderSide: new BorderSide(
+                  color: Colors.black,
+                  width: 1.0,
+                ),
+              ),
+              labelText: 'Please Enter the Amount :',
+              labelStyle:
+                  new TextStyle(color: Colors.red,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald',
+        fontSize: 30)),
+          style:
+              TextStyle(fontSize: 20.0, color: Colors.yellow,
+             fontWeight: FontWeight.bold,
+         ),
                 onChanged: (value) {
                   setState(() {
                     totalAmount = num.parse(value);
@@ -138,7 +173,7 @@ class MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
+      floatingActionButton: FloatingActionButton.extended(backgroundColor: Colors.green,
         icon: Icon(Icons.camera_alt),
         label: Text("Scan"),
         onPressed: _scanQR,
