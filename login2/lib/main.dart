@@ -169,6 +169,7 @@ class LoginPageState extends State<LoginPage> {
             switchFormState('register');
           },
         ),
+        /*
         FlatButton(
           child: Text("Sign In With Google"),
           onPressed: () async {
@@ -180,7 +181,7 @@ class LoginPageState extends State<LoginPage> {
               print(e);
             }
           },
-        )
+        )*/
       ];
     } else {
       return [
