@@ -50,28 +50,34 @@ class HomePageBodyState extends State<HomePageBody>
   }
 
   Widget _buildHeaderPanel(BuildContext context) {
-    return Expanded(
-      flex: 0,
+    return Flexible(
+      flex: 1,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
          
           Padding(
-            padding: const EdgeInsets.only(bottom: 10.0),
+            padding: const EdgeInsets.only(bottom: 18.0),
             child: Align(
               alignment: Alignment.center,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
+                  
                   Padding(
-                    padding: const EdgeInsets.only(top: 10.0, bottom: 60.0),
+                    padding: const EdgeInsets.only(top: 20.0),
                     child: Text(
                       "RIDE HISTORY",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: 20.0,
-                          fontFamily: "Nunito"),
+                          fontSize: 25.0,
+                          fontFamily: "Nunito",)
                     ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Icon(Icons.history, size: 50,)
                   ),
                 ],
               ),
@@ -94,28 +100,28 @@ class HomePageBodyState extends State<HomePageBody>
 
   Widget _buildMenuBar(BuildContext context) {
     return Container(
-      height: 70.0,
+      height: 60.0,
       color: Color(0xFF000000),
       child: CustomPaint(
         painter: TrianglePainter(_pageController),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Expanded(
+            Flexible(
               child: FlatButton(
                 onPressed: _onSignInButtonPress,
                 child: Text(
-                  "Active Ride",
+                  "ACTIVE RIDE",
                   style: TextStyle(color: Colors.white, fontSize: 16.0),
                 ),
               ),
             ),
             Container(height: 33.0, width: 1.0, color: Colors.white),
-            Expanded(
+            Flexible(
               child: FlatButton(
                 onPressed: _onSignUpButtonPress,
                 child: Text(
-                  "Past Rides",
+                  "PAST RIDES",
                   style: TextStyle(color: Colors.white, fontSize: 16.0),
                 ),
               ),
@@ -148,12 +154,31 @@ class HomePageBodyState extends State<HomePageBody>
                   
                    child: new Row(
                     children: <Widget>[
-                      
-                      new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
-                      
-                      new Text('Hello', 
-                      style: TextStyle(fontFamily: "Nunito", color: Colors.white),
+                      Padding(
+                        padding: EdgeInsets.only(right: 10),
+                      child: new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
                       ),
+                      Padding(
+                      padding: EdgeInsets.only(right: 10),
+                      child: new Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.only(right: 10, top:10, left:15),
+                            child: Text('Dest: Kanhai Colony', 
+                            style: TextStyle(fontFamily: "Nunito", 
+                            color: Colors.white),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(right: 10, left: 0),
+                            child: Text('Reach in: 10min', 
+                            style: TextStyle(fontFamily: "Nunito", 
+                            color: Colors.white),
+                            ),
+                          )
+                        ],
+                      )
+                      )
                     
                     ],
                   ),
@@ -184,18 +209,45 @@ class HomePageBodyState extends State<HomePageBody>
                   height: 100.0,
                   width: 300.0,
                   padding: new EdgeInsets.all(20.0),
-                  
-                   child: new Row(
+                  child: new Row(
                     children: <Widget>[
                       
-                      new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
-                      
-                      new Text('Hello', 
-                      style: TextStyle(fontFamily: "Nunito", color: Colors.white),
+                      Padding(
+                        padding: EdgeInsets.all(0),
+                      child: new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
                       ),
+                      Padding(
+                      padding: EdgeInsets.all(0) ,
+                      child: new Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.only(left: 30),
+                            child: Text('Dest: Kanhai Colony', 
+                            style: TextStyle(fontFamily: "Nunito", 
+                            color: Colors.white),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(0),
+                            child: Text('Duration: 20min', 
+                            style: TextStyle(fontFamily: "Nunito", 
+                            color: Colors.white),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(0),
+                            child: Text('Date: 20/8/19', 
+                            style: TextStyle(fontFamily: "Nunito", 
+                            color: Colors.white),
+                            ),
+                          )
+                        ],
+                      )
+                      )
                     
                     ],
                   ),
+                   
                 
                 ),
               ),
@@ -210,11 +262,38 @@ class HomePageBodyState extends State<HomePageBody>
                    child: new Row(
                     children: <Widget>[
                       
-                      new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
-                      
-                      new Text('Hello', 
-                      style: TextStyle(fontFamily: "Nunito", color: Colors.white),
+                      Padding(
+                        padding: EdgeInsets.all(0),
+                      child: new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
                       ),
+                      Padding(
+                      padding: EdgeInsets.all(0) ,
+                      child: new Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.only(left: 30),
+                            child: Text('Dest: 91, Springboard', 
+                            style: TextStyle(fontFamily: "Nunito", 
+                            color: Colors.white),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(0),
+                            child: Text('Duration: 20min', 
+                            style: TextStyle(fontFamily: "Nunito", 
+                            color: Colors.white),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(0),
+                            child: Text('Date: 5/8/19', 
+                            style: TextStyle(fontFamily: "Nunito", 
+                            color: Colors.white),
+                            ),
+                          )
+                        ],
+                      )
+                      )
                     
                     ],
                   ),
