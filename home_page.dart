@@ -137,7 +137,7 @@ class HomePageBodyState extends State<HomePageBody>
               "CURRENT RIDE :",
               style: TextStyle(fontSize: 20.0, fontFamily: "Nunito"),
             ),
-          ),
+            ),
           
           new Card(
             color: Colors.black,

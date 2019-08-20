@@ -5,10 +5,10 @@ void main() {
   runApp(
     MaterialApp(
       theme: ThemeData(
-        accentColor: Colors.black,
-        primaryColor: Color(0xFF000000),
+        accentColor: Colors.amber,
+        primaryColor: Color(0xFFBDA778),
         iconTheme: IconThemeData(
-          color: Color(0xFF000000),
+          color: Color(0xFFBDA778),
         ),
       ),
       home: HomePage(),
