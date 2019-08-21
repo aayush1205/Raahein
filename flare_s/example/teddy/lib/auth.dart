@@ -31,7 +31,7 @@ class Auth implements BaseAuth {
       String email, String password) async {
     return (await _firebaseAuth.createUserWithEmailAndPassword(
             email: email, password: password))
-        .uid;
+        .user.uid;
   }
 
   @override
@@ -47,7 +47,7 @@ class Auth implements BaseAuth {
       password: password,
       
     ))
-        .uid;
+        .user.uid;
   }
 
   @override
@@ -59,7 +59,7 @@ class Auth implements BaseAuth {
       idToken: _auth.idToken,
     );
 
-    return (await _firebaseAuth.signInWithCredential(credential)).uid;
+    return (await _firebaseAuth.signInWithCredential(credential)).user.uid;
   }
 
   @override
