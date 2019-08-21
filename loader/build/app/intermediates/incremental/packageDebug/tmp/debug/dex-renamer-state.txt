@@ -1,0 +1,4 @@
+#Wed Aug 21 22:18:37 IST 2019
+base.0=/home/aayush/loader/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

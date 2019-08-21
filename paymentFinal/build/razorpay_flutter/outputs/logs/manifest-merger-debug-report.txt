@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:1:1-9:12
+	package
+		ADDED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:2:3-42
+		INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:3:5-8:19
+activity#com.razorpay.CheckoutActivity
+ADDED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:4:9-7:20
+	android:label
+		ADDED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:6:17-50
+	android:name
+		ADDED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml:5:17-61
+uses-sdk
+INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml
+INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml
+		ADDED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/aayush/flutter_n/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_flutter-1.1.1/android/src/main/AndroidManifest.xml

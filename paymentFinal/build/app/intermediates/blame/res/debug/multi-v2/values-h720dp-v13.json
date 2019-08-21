@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/aayush/payment/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/aayush/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.2.aar/1181dc9ab3b4d38e17ab0b17927fbebe/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

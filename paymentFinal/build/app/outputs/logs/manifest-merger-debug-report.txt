@@ -1,0 +1,252 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:fluttertoast] /home/aayush/payment/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:razorpay_flutter] /home/aayush/payment/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.material:material:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/65a2c2fe080e0680be20b82b53f5b977/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/aayush/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.2.aar/1181dc9ab3b4d38e17ab0b17927fbebe/AndroidManifest.xml:17:1-22:12
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/zxing-1.9.13.aar/19210a166ebd720a74669acdcd4cbc5a/AndroidManifest.xml:2:1-13:12
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.9.13.aar/3c9d22cf54436db268562afacdfc9013/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/21a62c1e849086c5bab8eca3b5375d3b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/74a6f06209e23be6a98a92536045e96b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/6b5091191abefd39811a2cf2b9c105b9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/5276ca83398f09bea09ae679728d89a3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/cda8cfb05b2a4643b70834610c1b5192/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/2f5897d984b7be9f6aace05c63ac0593/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/4aea3594bfc79dc00fd465139b734c3c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/344101a034ec30de52c5a0b5cbe5192b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/1d33bf361e9be807020012ac1f0c9bc4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/798e34d713225252ba45eb81e8ce9634/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/3f2397f8afa38eb5f13a195c9164dede/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/795da1efb15986ec4dd1f484c6b25b38/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/1bf45ffeca50fff0cab61907d6e462bf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/41b3fc010cba160e73857f2e65276335/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/e40a7d373e909d1b066ccbc3c80fd108/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f40fa4c5a813bf43aefc9fb5e4599f2b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/e08f3bc4d5837e826cd859ba671091ea/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/27ce03161cd785d8cce22b883f66523f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:2:1-32:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/e04c7a1334f8235d23bf9855eb23fbb2/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/ddc3cdb1e79587f4cf022c936bbb9f58/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/ab928c58621a9e766e2955311ebeeeb7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/242dec25404c7354b23658cee0d424e8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/b25df4ab15ea62e0c9233a3c47ecfeb7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/351d714453a8cb4e02d482485f1fe4a4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/bfecc33a7de5b5c9e7db07986fbf02b7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/14a99acab511ac1ea3b932cf9a25d838/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/947a6d14ab14c28da082639cd72f15f1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/474e5711bb721651f1ce3cacc2247854/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/b1e4f06b8ad6fff62d2e69dbb9d4f14f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/8aba080a1c9892ae2e738f832c4e4c52/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:2:5-34
+		INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:9:5-33:19
+MERGED from [:razorpay_flutter] /home/aayush/payment/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:razorpay_flutter] /home/aayush/payment/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-15:19
+MERGED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-15:19
+MERGED from [com.google.android.material:material:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/65a2c2fe080e0680be20b82b53f5b977/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/65a2c2fe080e0680be20b82b53f5b977/AndroidManifest.xml:22:5-20
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/zxing-1.9.13.aar/19210a166ebd720a74669acdcd4cbc5a/AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/zxing-1.9.13.aar/19210a166ebd720a74669acdcd4cbc5a/AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.9.13.aar/3c9d22cf54436db268562afacdfc9013/AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.9.13.aar/3c9d22cf54436db268562afacdfc9013/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/27ce03161cd785d8cce22b883f66523f/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/27ce03161cd785d8cce22b883f66523f/AndroidManifest.xml:22:5-89
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:11:5-30:19
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:11:5-30:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/e04c7a1334f8235d23bf9855eb23fbb2/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/e04c7a1334f8235d23bf9855eb23fbb2/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/27ce03161cd785d8cce22b883f66523f/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:11:9-32
+	android:icon
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:12:9-43
+	android:name
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:10:9-57
+activity#com.example.payment.MainActivity
+ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:13:9-31:20
+	android:launchMode
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:15:13-43
+	android:hardwareAccelerated
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:18:13-47
+	android:windowSoftInputMode
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:19:13-55
+	android:configChanges
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:17:13-144
+	android:theme
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:16:13-47
+	android:name
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:14:13-41
+meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
+ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:24:13-26:40
+	android:value
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:26:17-37
+	android:name
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:25:17-82
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:29:27-74
+activity#com.apptreesoftware.barcodescan.BarcodeScannerActivity
+ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:32:9-90
+MERGED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-91
+MERGED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-91
+	android:name
+		ADDED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml:32:19-88
+uses-sdk
+INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml
+MERGED from [:fluttertoast] /home/aayush/payment/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /home/aayush/payment/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:razorpay_flutter] /home/aayush/payment/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:razorpay_flutter] /home/aayush/payment/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/65a2c2fe080e0680be20b82b53f5b977/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/65a2c2fe080e0680be20b82b53f5b977/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/aayush/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.2.aar/1181dc9ab3b4d38e17ab0b17927fbebe/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/aayush/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.2.aar/1181dc9ab3b4d38e17ab0b17927fbebe/AndroidManifest.xml:20:5-44
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/zxing-1.9.13.aar/19210a166ebd720a74669acdcd4cbc5a/AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/zxing-1.9.13.aar/19210a166ebd720a74669acdcd4cbc5a/AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.9.13.aar/3c9d22cf54436db268562afacdfc9013/AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.9.13.aar/3c9d22cf54436db268562afacdfc9013/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/21a62c1e849086c5bab8eca3b5375d3b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/21a62c1e849086c5bab8eca3b5375d3b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/74a6f06209e23be6a98a92536045e96b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/74a6f06209e23be6a98a92536045e96b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/6b5091191abefd39811a2cf2b9c105b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/6b5091191abefd39811a2cf2b9c105b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/5276ca83398f09bea09ae679728d89a3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/5276ca83398f09bea09ae679728d89a3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/cda8cfb05b2a4643b70834610c1b5192/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/cda8cfb05b2a4643b70834610c1b5192/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/2f5897d984b7be9f6aace05c63ac0593/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/2f5897d984b7be9f6aace05c63ac0593/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/4aea3594bfc79dc00fd465139b734c3c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/4aea3594bfc79dc00fd465139b734c3c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/344101a034ec30de52c5a0b5cbe5192b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/344101a034ec30de52c5a0b5cbe5192b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/1d33bf361e9be807020012ac1f0c9bc4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/1d33bf361e9be807020012ac1f0c9bc4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/798e34d713225252ba45eb81e8ce9634/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/798e34d713225252ba45eb81e8ce9634/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/3f2397f8afa38eb5f13a195c9164dede/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/3f2397f8afa38eb5f13a195c9164dede/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/795da1efb15986ec4dd1f484c6b25b38/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/795da1efb15986ec4dd1f484c6b25b38/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/1bf45ffeca50fff0cab61907d6e462bf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/1bf45ffeca50fff0cab61907d6e462bf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/41b3fc010cba160e73857f2e65276335/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/41b3fc010cba160e73857f2e65276335/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/e40a7d373e909d1b066ccbc3c80fd108/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/e40a7d373e909d1b066ccbc3c80fd108/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f40fa4c5a813bf43aefc9fb5e4599f2b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f40fa4c5a813bf43aefc9fb5e4599f2b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/e08f3bc4d5837e826cd859ba671091ea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/e08f3bc4d5837e826cd859ba671091ea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/27ce03161cd785d8cce22b883f66523f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/27ce03161cd785d8cce22b883f66523f/AndroidManifest.xml:20:5-44
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/e04c7a1334f8235d23bf9855eb23fbb2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/e04c7a1334f8235d23bf9855eb23fbb2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/ddc3cdb1e79587f4cf022c936bbb9f58/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/ddc3cdb1e79587f4cf022c936bbb9f58/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/ab928c58621a9e766e2955311ebeeeb7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/ab928c58621a9e766e2955311ebeeeb7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/242dec25404c7354b23658cee0d424e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/242dec25404c7354b23658cee0d424e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/b25df4ab15ea62e0c9233a3c47ecfeb7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/b25df4ab15ea62e0c9233a3c47ecfeb7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/351d714453a8cb4e02d482485f1fe4a4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/351d714453a8cb4e02d482485f1fe4a4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/bfecc33a7de5b5c9e7db07986fbf02b7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/bfecc33a7de5b5c9e7db07986fbf02b7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/14a99acab511ac1ea3b932cf9a25d838/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/14a99acab511ac1ea3b932cf9a25d838/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/947a6d14ab14c28da082639cd72f15f1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/947a6d14ab14c28da082639cd72f15f1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/474e5711bb721651f1ce3cacc2247854/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/474e5711bb721651f1ce3cacc2247854/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/b1e4f06b8ad6fff62d2e69dbb9d4f14f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/b1e4f06b8ad6fff62d2e69dbb9d4f14f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/8aba080a1c9892ae2e738f832c4e4c52/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/aayush/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/8aba080a1c9892ae2e738f832c4e4c52/AndroidManifest.xml:20:5-44
+INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/aayush/payment/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:9:5-67
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /home/aayush/payment/android/app/src/debug/AndroidManifest.xml:6:22-64
+activity#com.razorpay.CheckoutActivity
+ADDED from [:razorpay_flutter] /home/aayush/payment/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:20
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:18:9-29:20
+MERGED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:18:9-29:20
+	android:label
+		ADDED from [:razorpay_flutter] /home/aayush/payment/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-46
+	android:configChanges
+		ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:20:13-83
+	android:theme
+		ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:21:13-49
+	android:name
+		ADDED from [:razorpay_flutter] /home/aayush/payment/build/razorpay_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-57
+uses-permission#android.permission.CAMERA
+ADDED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from [:barcode_scan] /home/aayush/payment/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-62
+receiver#com.razorpay.RzpTokenReceiver
+ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:12:9-16:20
+	android:name
+		ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:12:19-63
+intent-filter#action:name:rzp.device_token.share
+ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:13:13-15:29
+action#rzp.device_token.share
+ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:14:17-65
+	android:name
+		ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:14:25-62
+intent-filter#action:name:android.intent.action.MAIN+data:host:rzp.io+data:scheme:io.rzp
+ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:22:13-28:29
+data
+ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:25:17-27:47
+	android:host
+		ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:26:21-42
+	android:scheme
+		ADDED from [com.razorpay:checkout:1.5.4] /home/aayush/.gradle/caches/transforms-1/files-1.1/checkout-1.5.4.aar/e2a579fff26a1ceb991c672344be3e3a/AndroidManifest.xml:27:21-44
