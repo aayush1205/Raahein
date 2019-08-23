@@ -4,6 +4,7 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:location/location.dart' as prefix0;
 import 'package:raahein_final/combo/lib/requests/google_maps_requests.dart';
+import 'package:raahein_final/mainscreen/mainscreen.dart';
 //import '../utils/core.dart';
 
 class Stops extends StatefulWidget {
@@ -19,7 +20,16 @@ class Stops extends StatefulWidget {
 class _MyHomePageState extends State<Stops> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Map());
+    return WillPopScope
+    (
+         onWillPop: (){
+          Navigator.push(context,MaterialPageRoute(
+            builder: (context) => Raahein(),
+
+
+          ));
+        },
+      child: Scaffold(body: Map()));
   }
 }
 

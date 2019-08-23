@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'dart:typed_data';
-import 'package:flare_flutter/flare_render_box.dart';
+import 'flare_render_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flare_dart/actor_drawable.dart';

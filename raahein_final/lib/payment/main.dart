@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:location/location.dart' show Location, LocationData;
-import 'new.dart';
+import 'payscreen.dart';
 import 'package:raahein_final/mainscreen/mainscreen.dart';
 
 void main() => runApp(MyApp());

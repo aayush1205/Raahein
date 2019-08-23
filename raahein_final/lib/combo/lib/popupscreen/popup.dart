@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:raahein_final/payment/new.dart';
+import 'package:raahein_final/payment/payscreen.dart';
 
 class PopupDialog extends StatelessWidget {
   @override

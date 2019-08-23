@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter/services.dart';
 import 'package:barcode_scan/barcode_scan.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -10,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Raahein',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
@@ -113,68 +116,53 @@ class MyHomePageState extends State<MyHomePage1>
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black,
-      appBar: AppBar(backgroundColor: Colors.black,
-      centerTitle: true ,
-        title: Text(widget.title ?? ""),
-      ),
       
       
       body: Center(
         child: Column(
           
           children: <Widget>[
-            Image.asset(
-                    "assets/pay.gif",
+            Container(
+              height: 180,
+            ),
+
+            Text('Scan to Pay!',
+            style: TextStyle(color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Nunito',
+        fontSize: 40)),
+          
+        Padding(
+              padding: EdgeInsets.only(left: 30.00,
+              right: 30.00),
+        
+        child:    Image.asset(
+                    "assets/pay3.gif",
                     height: 400.0,
                     width: 400.0,
                   ),
-            LimitedBox(
-              maxWidth: 150.0,
-              child: TextField(
-                keyboardType: TextInputType.number,
-                decoration:
-                    InputDecoration(fillColor: Colors.black,
-              filled: true,
-              border: new OutlineInputBorder(
-
-                borderRadius: const BorderRadius.all(
-
-                  const Radius.circular(15.0),
-                ),
-                borderSide: new BorderSide(
-                  color: Colors.black,
-                  width: 1.0,
-                ),
-              ),
-              labelText: 'Please Enter the Amount :',
-              labelStyle:
-                  new TextStyle(color: Colors.red,
-        fontWeight: FontWeight.bold,
-        fontFamily: 'Oswald',
-        fontSize: 30)),
-          style:
-              TextStyle(fontSize: 20.0, color: Colors.yellow,
-             fontWeight: FontWeight.bold,
-         ),
-                onChanged: (value) {
-                  setState(() {
-                    totalAmount = num.parse(value);
-                  });
-                },
-              ),
+        ),
+            
+            Container(
+              height: 20,
             ),
-            SizedBox(
-              height: 15.0,
-            ),
+  SizedBox(
+  width: 900.0,
+  height: 90.0,
+  child: FloatingActionButton(
+  onPressed: _scanQR,
+  child: Icon(Icons.camera_alt,
+  size: 40.00,),
+  backgroundColor: Colors.blue,
+),
+  )     
           ],
+
+
+          
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(backgroundColor: Colors.green,
-        icon: Icon(Icons.camera_alt),
-        label: Text("Scan"),
-        onPressed: _scanQR,
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      
     );
   }
 }
