@@ -116,7 +116,7 @@ packages:
   flare_flutter:
     dependency: "direct main"
     description:
-      path: "/Users/manaswitatyagi/Desktop/Hackathon/raahein_final/flare_flutter"
+      path: "/Users/amitmunshi/Desktop/nechack/Raahein/raahein_final/flare_flutter"
       relative: false
     source: path
     version: "1.5.5"
