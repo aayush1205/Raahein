@@ -5,6 +5,10 @@ import 'package:geolocator/geolocator.dart';
 import 'package:location/location.dart' as prefix0;
 import '../requests/google_maps_requests.dart';
 import '../utils/core.dart';
+import 'bottombutton.dart';
+import 'package:raahein_final/combo/lib/screens/topbutton.dart';
+import 'package:raahein_final/mainscreen/mainscreen.dart';
+import 'package:raahein_final/combo/lib/popupscreen/combo.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -18,7 +22,18 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Map());
+    return WillPopScope(
+      onWillPop: (){
+          Navigator.push(context,MaterialPageRoute(
+            builder: (context) => Raahein(),
+
+
+          ));
+        },
+          child: Scaffold(
+        resizeToAvoidBottomPadding: false,
+        body: Map()),
+    );
   }
 }
 
@@ -41,7 +56,7 @@ class _MapState extends State<Map> {
     
     
     
-    
+       static LatLng _lastMapPosition= LatLng(28.4590692, 77.071084);    
       static LatLng _initialPosition;
       LatLng _lastPosition = _initialPosition;
       final Set<Marker> _markers = {};
@@ -149,46 +164,150 @@ class _MapState extends State<Map> {
               ),
             ),
     
-            Positioned(
-              bottom:20,
-              left:15,
+            
               
-              child: Container(
-                
+              
+               Container(
+                         child: Stack(
+           children: <Widget> [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        child:Padding(
+                          padding: EdgeInsets.only(top: 536.5),
+                        child: Bottomm(
+                          onPressed: () => _onAlertWithCustomContentPressed(context),
+                          child: Row(
+                            
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.only(right: 10, left: 10),
+                      child: new Image.asset("assets/iauto.png",
+                      width: 40,
+                      height: 40,
+                      ),
+                      
+                      /*Icon(Icons.directions_bus, 
+                      color: Colors.white, 
+                      size: 30.0,),*/
+                      ),
+                      
 
-                child: Row (
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  
-              children: <Widget> [
-                new Container (
-                  margin: const EdgeInsets.all(0),
-                  padding: EdgeInsets.only(top: 500, left: 0, right: 10, bottom:0),
-                  child: RaisedButton.icon(
-                    shape: StadiumBorder(),
-                    icon: Icon(Icons.directions_bus, color: Colors.white),
-                    color: Colors.black,
-                    label: Text('Combo - Rs40', style: TextStyle(fontFamily:"Nunito", color: Colors.white),),
-                    onPressed: () => _onAlertWithCustomContentPressed(context),
-                 ),
-                ),
+                          Container(
+                            padding: EdgeInsets.only(right: 5, top:5, left:5),
+                            child: Column(
+                              children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10),
+                                  child: Text('COMBO', 
+                                  style: TextStyle(fontFamily: "Nunito", 
+                                  color: Colors.black),
+                                  )
+                                  
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(0),
+                                  child: Text('Rs: 54', 
+                                  style: TextStyle(fontFamily: "Nunito", 
+                                  color: Colors.black),
+                                  )
+                                  
+                                ),
+                              
+                              ],
+                            ),
+                          ),
 
-                new Container (
-                  margin: const EdgeInsets.all(0),
-                  padding: EdgeInsets.only(top: 500, left: 10, right: 0, bottom: 0),
-                  child: RaisedButton.icon(
-                    shape: StadiumBorder(),
-                    icon: Icon(Icons.directions_bus, color: Colors.white),
-                    color: Colors.black,
-                    label: Text('Request Combo', style: TextStyle(fontFamily:"Nunito", color: Colors.white),),
-                    onPressed: () => _onAlertWithCustomContentConfirm(context),
-                 ),
-                )   
-                
-              ],
-                )
-              ),
-            )
+                          
+                          
+                          Container(
+                            padding: EdgeInsets.only(right: 5, top:5, left:146),
+                            child: Column(
+                              children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10),
+                                  child: Row(
+                                    children: <Widget>[
+                                      Text('1-3pax', 
+                                  style: TextStyle(fontFamily: "Nunito", 
+                                  color: Colors.black,
+                                  fontSize: 12),
+                                      ),
+                                      Icon(Icons.person,
+                                      size: 15.0,
+                                      color: Colors.black
+                                      )
+                                    ],
+                                  
+                                  )
+                                  
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(0),
+                                  child: Text('ETA: 8 min', 
+                                  style: TextStyle(fontFamily: "Nunito", 
+                                  color: Colors.black),
+                                  )
+                                  
+                                ),
+                              
+                              ],
+                            ),
+                          ),
+                        ]
+                      ),
+                      )
+                      )
+                      ),
+                      Container(
+                           height: 40,
+                           width: 500,
+                           color: Colors.yellow[300],
+                           child: Padding(
+                             padding: EdgeInsets.only(left: 80, top:10),
+                           child: Text("MEDIUM TRAFFIC IN YOUR AREA",
+                           style: TextStyle(fontFamily: "Nunito",
+                           color: Colors.black) 
+                           )
+                          )      
+                        ),
+                      Container(
+                        child: Padding(
+                          padding: EdgeInsets.only(bottom:0.0),
+                        child: Bottommm(
+                          
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                              builder: (context) => LoaderComp(),
+
+                            ));
+                          },
+                          child: Row(
+                            
+                    children: <Widget>[
+                      Container(
+                      padding: EdgeInsets.only(left: 108, right: 108),
+                       child: Text(
+                         "Request Combo",
+                         style: TextStyle(color: Colors.white,
+                         fontSize: 20),
+                      ),
+                      )
+                    ]
+                          ),
+                        )
+                        )
+                      )
+                    ]
+              )
+           ]
+                         )
+         )
+
+              
+            
           ],
         );
       }
@@ -214,6 +333,7 @@ class _MapState extends State<Map> {
               icon: BitmapDescriptor.defaultMarker));
         });
       }
+      
 
       void createRoute(String encodedPoly){
         setState(() {
@@ -225,6 +345,7 @@ class _MapState extends State<Map> {
           
         });
       }
+      
       
       
       //this method will convert list of doubles into latlng

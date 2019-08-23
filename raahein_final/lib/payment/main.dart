@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:location/location.dart' show Location, LocationData;
 import 'new.dart';
+import 'package:raahein_final/mainscreen/mainscreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,12 +9,21 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(        
-        primarySwatch: Colors.deepPurple,
+    return WillPopScope(
+      onWillPop: (){
+          Navigator.push(context,MaterialPageRoute(
+            builder: (context) => Raahein(),
+
+
+          ));
+        },
+          child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(        
+          primarySwatch: Colors.deepPurple,
+        ),
+        home: MyHomePage(title: 'Where are You?'),
       ),
-      home: MyHomePage(title: 'Where are You?'),
     );
   }
 }
@@ -33,126 +43,137 @@ class _MyHomePageState extends State<MyHomePage> {
    
 
  LocationData userLocation;
+ 
 
   @override
   Widget build(BuildContext context) {
     
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: new Padding(
-        padding: const EdgeInsets.only(top:60, bottom:60, left:55, right:50),
-      
-        child: Column(
-  
-          crossAxisAlignment: CrossAxisAlignment.end ,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+    return WillPopScope(
+      onWillPop: () {
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) => Raahein(),
           
-          new Container(
-            margin: const EdgeInsets.only(bottom:40),
-            child: new Text("Where are You?", style: TextStyle( fontSize: 32, fontFamily:"Nunito", color: Colors.white),),
-            padding: EdgeInsets.all(10),
-          ),
 
-          userLocation == null
-                ? CircularProgressIndicator()
-                : Text("Location:" +
-                    userLocation.latitude.toString() +
-                    " " +
-                    userLocation.longitude.toString(), style: TextStyle(fontFamily: "Nunito", color: Colors.white),),
-            
+        ));
+      },
+          child: Scaffold(
+        backgroundColor: Colors.black,
+        body: new Padding(
+          padding: const EdgeInsets.only(top:60, bottom:60, left:55, right:50),
+        
+          child: Column(
+  
+            crossAxisAlignment: CrossAxisAlignment.end ,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
             
             new Container(
-              margin: const EdgeInsets.only(bottom: 5, right:80),
-              child: new RaisedButton(
-                onPressed: () {
-                  _getLocation().then((value) {
-                    setState(() {
-                      userLocation = value;
+              margin: const EdgeInsets.only(bottom:40),
+              child: new Text("Where are You?", style: TextStyle( fontSize: 32, fontFamily:"Nunito", color: Colors.white),),
+              padding: EdgeInsets.all(10),
+            ),
+
+            userLocation == null
+                  ? CircularProgressIndicator()
+                  : Text("Location:" +
+                      userLocation.latitude.toString() +
+                      " " +
+                      userLocation.longitude.toString(), style: TextStyle(fontFamily: "Nunito", color: Colors.white),),
+                      
+              
+              
+              new Container(
+                margin: const EdgeInsets.only(bottom: 5, right:80),
+                child: new RaisedButton(
+                  onPressed: () {
+                    _getLocation().then((value) {
+                      setState(() {
+                        userLocation = value;
+                      });
                     });
-                  });
+                  },
+                  color: Color(0xFFFFFFFF),
+                  elevation: 10,
+                  child: Icon(Icons.location_on, color: Colors.black,),
+                  shape: CircleBorder(),
+                  splashColor: Color(0xFF000000),
+                ),
+              ),
+              
+            
+            new Container(
+              margin: const EdgeInsets.only(top: 10.0),
+              child: new RaisedButton(
+                child: Text("Huda City Center", style: TextStyle(color: Color(0xFF000000),fontFamily:"Nunito"),),
+                onPressed: (){
+                  Navigator.of(context).push(_createRoute());
+                  String source;
                 },
                 color: Color(0xFFFFFFFF),
                 elevation: 10,
-                child: Icon(Icons.location_on, color: Colors.black,),
-                shape: CircleBorder(),
+                padding: EdgeInsets.only(top:15, bottom:15, left:72, right:72),
+                //shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                shape: StadiumBorder(),
+                animationDuration: Duration(milliseconds: 500),
                 splashColor: Color(0xFF000000),
+              
               ),
             ),
             
-          
-          new Container(
-            margin: const EdgeInsets.only(top: 10.0),
-            child: new RaisedButton(
-              child: Text("Huda City Center", style: TextStyle(color: Color(0xFF000000),fontFamily:"Nunito"),),
-              onPressed: (){
-                Navigator.of(context).push(_createRoute());
-                String source;
-              },
-              color: Color(0xFFFFFFFF),
-              elevation: 10,
-              padding: EdgeInsets.only(top:15, bottom:15, left:72, right:72),
-              //shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10)),
-              shape: StadiumBorder(),
-              animationDuration: Duration(milliseconds: 500),
-              splashColor: Color(0xFF000000),
-            
+            new Container(
+              margin: const EdgeInsets.only(top: 15.0),
+               child: new RaisedButton(
+                 child: Text("Kanhai Colony", style: TextStyle(color: Color(0xFF000000),fontFamily:"Nunito"),),
+                onPressed: (){
+                  Navigator.of(context).push(_createRoute());
+                  String source;
+                },
+                color: Color(0xFFFFFFFF),
+                elevation: 10,
+                padding: EdgeInsets.only(top:15, bottom:15, left:80, right:82),
+                //shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                shape: StadiumBorder(),
+                splashColor: Color(0xFF000000),
+              ),
             ),
-          ),
-          
-          new Container(
-            margin: const EdgeInsets.only(top: 15.0),
-             child: new RaisedButton(
-               child: Text("Kanhai Colony", style: TextStyle(color: Color(0xFF000000),fontFamily:"Nunito"),),
-              onPressed: (){
-                Navigator.of(context).push(_createRoute());
-                String source;
-              },
-              color: Color(0xFFFFFFFF),
-              elevation: 10,
-              padding: EdgeInsets.only(top:15, bottom:15, left:80, right:82),
-              //shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10)),
-              shape: StadiumBorder(),
-              splashColor: Color(0xFF000000),
-            ),
-          ),
 
-          new Container(
-            margin: const EdgeInsets.only(top: 15.0), 
-             child: new RaisedButton(
-               child: Text("Ramada Hotel", style: TextStyle(color: Color(0xFF000000),fontFamily:"Nunito"),),
-              onPressed: (){
-                Navigator.of(context).push(_createRoute());
-                String source;
-              },
-              color: Color(0xFFFFFFFF),
-              elevation: 10,
-              padding: EdgeInsets.only(top:15, bottom:15, left:80, right:80),
-              //shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10)),
-              shape: StadiumBorder(),
-              splashColor: Color(0xFF000000),
+            new Container(
+              margin: const EdgeInsets.only(top: 15.0), 
+               child: new RaisedButton(
+                 child: Text("Ramada Hotel", style: TextStyle(color: Color(0xFF000000),fontFamily:"Nunito"),),
+                onPressed: (){
+                  Navigator.of(context).push(_createRoute());
+                  String source;
+                },
+                color: Color(0xFFFFFFFF),
+                elevation: 10,
+                padding: EdgeInsets.only(top:15, bottom:15, left:80, right:80),
+                //shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                shape: StadiumBorder(),
+                splashColor: Color(0xFF000000),
+              ),
             ),
-          ),
 
-          new Container(
-            margin: const EdgeInsets.only(top: 15.0),
-             child: new RaisedButton(
-               child: Text("Apparel House", style: TextStyle(color: Color(0xFF000000),fontFamily:"Nunito"),),
-              onPressed: (){
-                Navigator.of(context).push(_createRoute());
-                String source;
-              },
-              color: Color(0xFFFFFFFF),
-              elevation: 10,
-              padding: EdgeInsets.only(top:15, bottom:15, left:76, right:80),
-              //shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10)),
-              shape: StadiumBorder(),
-              splashColor: Color(0xFF000000),
+            new Container(
+              margin: const EdgeInsets.only(top: 15.0),
+               child: new RaisedButton(
+                 child: Text("Apparel House", style: TextStyle(color: Color(0xFF000000),fontFamily:"Nunito"),),
+                onPressed: (){
+                  Navigator.of(context).push(_createRoute());
+                  String source;
+                },
+                color: Color(0xFFFFFFFF),
+                elevation: 10,
+                padding: EdgeInsets.only(top:15, bottom:15, left:76, right:80),
+                //shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                shape: StadiumBorder(),
+                splashColor: Color(0xFF000000),
+              )
             )
-          )
-          ],
-        ),
-      ),// This trailing comma makes auto-formatting nicer for build methods.
+            ],
+          ),
+        ),// This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }

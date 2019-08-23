@@ -13,6 +13,8 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="raahein_final"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+                   android:value="AIzaSyBMw6mT_JVZKemv8pd-yrG6qpTAGpxkeeY"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -27,8 +29,6 @@
             <meta-data
                 android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
                 android:value="true" />
-            <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBXEaEHJkYJ6_BNGP8F47R-_55XEHWdq0c"/>
             
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

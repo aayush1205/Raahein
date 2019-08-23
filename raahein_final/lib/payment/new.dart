@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Raahein',
       theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
+        primarySwatch: Colors.blueGrey,
       ),
       home: MyHomePage1(title: 'Raahein Payment Page'),
     );
@@ -28,7 +28,8 @@ class MyHomePage1 extends StatefulWidget {
   MyHomePageState createState() => MyHomePageState();
 }
 
-class MyHomePageState extends State<MyHomePage1> {
+class MyHomePageState extends State<MyHomePage1> 
+{
   String result = "Hey there !";
 
   Future _scanQR() async {
@@ -59,7 +60,7 @@ class MyHomePageState extends State<MyHomePage1> {
     }
   }
 
-  double totalAmount = 37.3;
+  int totalAmount = 0;
   Razorpay _razorpay;
 
   @override
@@ -108,32 +109,72 @@ class MyHomePageState extends State<MyHomePage1> {
   void _handleExternalWallet(ExternalWalletResponse response) {
     Fluttertoast.showToast(msg: "EXTERNAL WALLET" + response.walletName);
   }
-Color gradientStart = Colors.grey[800]; //Change start gradient color here
-  Color gradientEnd = Colors.grey[600];
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
+    return Scaffold(backgroundColor: Colors.black,
+      appBar: AppBar(backgroundColor: Colors.black,
+      centerTitle: true ,
         title: Text(widget.title ?? ""),
       ),
-      body: new Container(
-        decoration: new BoxDecoration(
-          gradient:  new LinearGradient(colors: [gradientStart,gradientEnd],
-                begin: const FractionalOffset(0.4, 0.0),
-                end: const FractionalOffset(0.0, 0.7),
-                stops: [0.0,1.0],
-                //tileMode: TileMode.clamp
+      
+      
+      body: Center(
+        child: Column(
+          
+          children: <Widget>[
+            Image.asset(
+                    "assets/pay.gif",
+                    height: 400.0,
+                    width: 400.0,
+                  ),
+            LimitedBox(
+              maxWidth: 150.0,
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration:
+                    InputDecoration(fillColor: Colors.black,
+              filled: true,
+              border: new OutlineInputBorder(
+
+                borderRadius: const BorderRadius.all(
+
+                  const Radius.circular(15.0),
+                ),
+                borderSide: new BorderSide(
+                  color: Colors.black,
+                  width: 1.0,
+                ),
+              ),
+              labelText: 'Please Enter the Amount :',
+              labelStyle:
+                  new TextStyle(color: Colors.red,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Oswald',
+        fontSize: 30)),
+          style:
+              TextStyle(fontSize: 20.0, color: Colors.yellow,
+             fontWeight: FontWeight.bold,
+         ),
+                onChanged: (value) {
+                  setState(() {
+                    totalAmount = num.parse(value);
+                  });
+                },
+              ),
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+          ],
         ),
-        ),
-       
       ),
-      floatingActionButton: FloatingActionButton.extended(
+      floatingActionButton: FloatingActionButton.extended(backgroundColor: Colors.green,
         icon: Icon(Icons.camera_alt),
         label: Text("Scan"),
         onPressed: _scanQR,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      
     );
   }
 }
