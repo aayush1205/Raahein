@@ -65,6 +65,8 @@ class _MapState extends State<Map> {
       @override
       Widget build(BuildContext context) {
         return _initialPosition == null ? Container(
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
           alignment: Alignment.center,
           child: Center(
             child: CircularProgressIndicator(),
@@ -175,6 +177,8 @@ class _MapState extends State<Map> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Container(
+                        
+
                         child:Padding(
                           padding: EdgeInsets.only(top: 536.5),
                         child: Bottomm(

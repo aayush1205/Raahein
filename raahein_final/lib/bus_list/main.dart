@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'a.dart';
 import 'package:raahein_final/mainscreen/mainscreen.dart';
 
-class MyApp extends StatelessWidget {
+class MyAppNew extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
