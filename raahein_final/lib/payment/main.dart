@@ -3,7 +3,7 @@ import 'package:location/location.dart' show Location, LocationData;
 import 'payscreen.dart';
 import 'package:raahein_final/mainscreen/mainscreen.dart';
 
-void main() => runApp(MyApp());
+
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

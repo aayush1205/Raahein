@@ -16,25 +16,28 @@ class PopupDialog extends StatelessWidget {
       child: Center(child:new ListView(
             shrinkWrap: true,
             children: <Widget>[
-              new Image.asset('assets/popup.png',width:300.0,height:270.0),
-
-              new FloatingActionButton.extended( label: Container(
-child: Text("Confirm your Booking",)
+              new Image.asset('lib/assets/popup.png',width:300.0,height:270.0),
+new Padding(
+  padding: EdgeInsets.only(left: 70, bottom: 30, right:70),
+              child: FloatingActionButton.extended( label: Container(
+child: Text("Scan",
+style: TextStyle(color: Colors.black))
 
         ),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
 
   backgroundColor: Color(0xfff8cf2c),
   
-        icon: Icon(Icons.directions_car),
+        icon: Icon(Icons.camera_alt,
+        color: Colors.black,),
         
-        onPressed:(){ Navigator.push(context, 
-        MaterialPageRoute(
-          builder: (context) => MyHomePage4(),
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(
+            builder: (context) => MyHomePage4(),
 
-        ));
+          ));
         },
-      ),
+      ),)
             ]
 
 

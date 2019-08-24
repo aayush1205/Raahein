@@ -21,7 +21,7 @@ class _LoaderCompState extends State<LoaderComp> {
   void initState() {
     super.initState();
     Timer (
-      Duration(seconds: 5), //We push the popup route in this callback
+      Duration(seconds: 5), 
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (BuildContext context) => PopupDialog())
       ),

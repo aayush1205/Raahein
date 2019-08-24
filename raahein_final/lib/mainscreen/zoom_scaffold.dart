@@ -7,6 +7,7 @@ import 'navi.dart';
 import 'package:raahein_final/payment/main.dart';
 import 'package:raahein_final/combo/lib/main.dart';
 import 'package:raahein_final/history/home_page.dart';
+import 'package:raahein_final/bus_list/main.dart';
 
 
 class ZoomScaffold extends StatefulWidget {
@@ -88,7 +89,7 @@ class _ZoomScaffoldState extends State<ZoomScaffold>
             }*/
           if (index==0){
             Navigator.push(context, MaterialPageRoute(
-                    builder: (context) => MyApp()
+                    builder: (context) => MyApp(),
                     ),
                     );
           }
@@ -102,6 +103,13 @@ class _ZoomScaffoldState extends State<ZoomScaffold>
           else if(index==4){
             Navigator.push(context, MaterialPageRoute(
                     builder: (context) => History()
+                    ),
+                    );
+
+          }
+          else if(index==3){
+            Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Buslist()
                     ),
                     );
 
