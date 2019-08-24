@@ -63,11 +63,7 @@ class MyHomePageState extends State<MyHomePage1>
     }
   }
 
-<<<<<<< HEAD
   int totalAmount = 32;
-=======
-  int totalAmount = 23;
->>>>>>> f035dcbea6aa438cbb77e83ba6a7c22e497f0c3f
   Razorpay _razorpay;
 
   @override
@@ -119,9 +115,10 @@ class MyHomePageState extends State<MyHomePage1>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      
-      
+    return Container(
+      // height: MediaQuery(),
+      // width: MediaQuery(),
+      child: Scaffold(
       backgroundColor: Colors.black,
       
       
@@ -130,12 +127,11 @@ class MyHomePageState extends State<MyHomePage1>
           
           children: <Widget>[
             Container(
-              height: 150,
+              height: 100,
             ),
 
             Text('Scan to Pay!',
             style: TextStyle(color: Colors.white,
-        fontWeight: FontWeight.bold,
         fontFamily: 'Nunito',
         fontSize: 40)),
           
@@ -154,12 +150,12 @@ class MyHomePageState extends State<MyHomePage1>
               height: 20,
             ),
   SizedBox(
-  width: 900.0,
-  height: 90.0,
+  width: 70.0,
+  height: 70.0,
   child: FloatingActionButton(
   onPressed: _scanQR,
   child: Icon(Icons.camera_alt,
-  size: 40.00,),
+  size: 35.00,),
   backgroundColor: Colors.blue,
 ),
   )     
@@ -170,6 +166,7 @@ class MyHomePageState extends State<MyHomePage1>
         ),
       ),
       
+    )
     );
   }
 }

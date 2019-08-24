@@ -57,7 +57,7 @@ class _ZoomScaffoldState extends State<ZoomScaffold>
             leading: new IconButton(
                 icon: Icon(
                   Icons.menu,
-                  color: Colors.blue,
+                  color: Colors.amber,
                 ),
                 onPressed: () {
                   Provider.of<MenuController>(context, listen: true).toggle();
@@ -68,11 +68,11 @@ class _ZoomScaffoldState extends State<ZoomScaffold>
           index: 2,
           height: 50.0,
           items: <Widget>[
-            Icon(Icons.payment, size: 30, color: Colors.amber),
+            Icon(Icons.payment, size: 30, color: Colors.blue),
             Icon(Icons.directions_bus, size: 30, color: Colors.blue),
-            Icon(Icons.home, size: 30, color: Colors.amber),
+            Icon(Icons.home, size: 30, color: Colors.blue),
             Icon(Icons.location_searching, size: 30, color: Colors.blue),
-            Icon(Icons.history, size: 30, color: Colors.amber),
+            Icon(Icons.history, size: 30, color: Colors.blue),
           ],
           color: Colors.black,
           buttonBackgroundColor: Colors.white,

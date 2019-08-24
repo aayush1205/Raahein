@@ -48,33 +48,85 @@ class FirestoreCRUDPageState extends State<FirestoreCRUDPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
-        title: Text("RAAHEIN: FOR CONDUCTORS"),
-      ),
-      body: ListView(
-        padding: EdgeInsets.all(8),
-        children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return Container(
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
+      child: Scaffold(backgroundColor: Colors.black,
+      
+      
+        
+        
+        
+        body: Center(
+          child: Column(
+
+
+
+            
+            
             children: <Widget>[
-              
-              RaisedButton(
-                
-                color: Colors.white,
-                onPressed: _scanQR,
-                child: Text(
-                  'Add Aadhar Data',
-                  style: TextStyle(color: Colors.teal),
-                ),
+              Container(
+                height:90,
               ),
-              
-            ],
+
+Padding(padding: EdgeInsets.only(),
+                
+              child:  Text('Raahein for CONDUCTORS',
+              style: TextStyle(color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'Oswald',
+          fontSize: 32
+              )),
+                   
+                
+          
+                ),
+
+                Container(
+                  height: 190,
+                ),
+
+                Padding(padding: EdgeInsets.only(left: 70, right: 70),
+
+                
+              child:  Text('Add AADHAR Data',
+              style: TextStyle(color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'Oswald',
+          fontSize: 30
+              )),
+                   
+                
+          
+                ),
+
+          Container(
+            height: 120,
           ),
-        ],
-      ),
+SizedBox(
+  width: 80.0,
+  height: 80.0,
+          
+            child:FloatingActionButton(
+              backgroundColor: Colors.red,
+              
+              onPressed: _scanQR,
+              child: Icon(Icons.add, color: Colors.white,
+              ),
+            )
+           
+)
+          
+
+              ],
+            
+        ),
+        ),
+      )
     );
+    
+    
+    
   }
 
   void createData() async {

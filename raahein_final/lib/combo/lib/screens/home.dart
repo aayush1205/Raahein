@@ -209,7 +209,7 @@ class _MapState extends State<Map> {
                                 ),
                                 Container(
                                   padding: EdgeInsets.all(0),
-                                  child: Text('Rs: 54', 
+                                  child: Text('Rs: 68', 
                                   style: TextStyle(fontFamily: "Nunito", 
                                   color: Colors.black),
                                   )
@@ -422,26 +422,27 @@ _onAlertWithCustomContentPressed(context) {
     Alert(
         context: context,
         title: "COMBO",
-        image: Image.asset("assets/images/combo.png"),
-        content: Column(
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                 Expanded(
-                 child:new Column(
-                   children: <Widget>[
-                     new Text("Auto: Rs10", style: TextStyle(fontFamily: "Nunito", fontSize: 16.0)),
-                     new Text("Bus: Rs20", style: TextStyle(fontFamily: "Nunito", fontSize: 16.0)),
-                     new Text("Auto: Rs10", style: TextStyle(fontFamily: "Nunito", fontSize: 16.0)),
-                   ],
-                 )
-                 )
-              ],
-              )
-          ],
-        ),
+        image: Image.asset("assets/breakdown.jpg"),
+        // content: Column(
+        //   children: <Widget>[
+        //     Row(
+        //       children: <Widget>[
+        //          Expanded(
+        //          child:new Column(
+        //            children: <Widget>[
+        //              new Text("Auto: Rs10", style: TextStyle(fontFamily: "Nunito", fontSize: 16.0)),
+        //              new Text("Bus: Rs20", style: TextStyle(fontFamily: "Nunito", fontSize: 16.0)),
+        //              new Text("Auto: Rs10", style: TextStyle(fontFamily: "Nunito", fontSize: 16.0)),
+        //            ],
+        //          )
+        //          )
+        //       ],
+        //       )
+        //   ],
+        // ),
         buttons: [
           DialogButton(
+            color: Colors.blue,
             onPressed: () => Navigator.pop(context),
             child: Text(
               "BACK",

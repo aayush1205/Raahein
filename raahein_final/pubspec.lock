@@ -130,15 +130,7 @@ packages:
   flare_flutter:
     dependency: "direct main"
     description:
-<<<<<<< HEAD
-      path: "/home/ayushi21/Raahein/raahein_final/flare_flutter"
-=======
-<<<<<<< HEAD
-      path: "/Users/amitmunshi/Desktop/nechack/Raahein/raahein_final/flare_flutter"
-=======
-      path: "/Users/manaswitatyagi/Desktop/necfinal/Raahein/raahein_final/flare_flutter"
->>>>>>> f035dcbea6aa438cbb77e83ba6a7c22e497f0c3f
->>>>>>> 7e8cee22c09c704fe85e6ce5e81f0387617575fb
+      path: "/home/aayush/Raahein/raahein_final/flare_flutter"
       relative: false
     source: path
     version: "1.5.5"
