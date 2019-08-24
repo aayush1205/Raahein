@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ProviderN(
-      auth: Auth(),
+      auth: BaseAuth(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
           home: MyHomePage(), theme: new ThemeData(primarySwatch: Colors.red)),
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final Auth auth = ProviderN.of(context).auth;
+    final BaseAuth auth = ProviderN.of(context).auth;
 
     return StreamBuilder<String>(
       stream: auth.onAuthStateChanged,

@@ -63,7 +63,11 @@ class MyHomePageState extends State<MyHomePage1>
     }
   }
 
+<<<<<<< HEAD
+  int totalAmount = 32;
+=======
   int totalAmount = 23;
+>>>>>>> f035dcbea6aa438cbb77e83ba6a7c22e497f0c3f
   Razorpay _razorpay;
 
   @override
@@ -115,7 +119,10 @@ class MyHomePageState extends State<MyHomePage1>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.black,
+    return Scaffold(
+      
+      
+      backgroundColor: Colors.black,
       
       
       body: Center(

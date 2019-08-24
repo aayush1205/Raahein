@@ -1,3 +1,5 @@
+import 'package:raahein_final/teddy/auth.dart';
+
 import 'circular_image.dart';
 import 'zoom_scaffold.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +10,7 @@ import 'package:location/location.dart';
 import 'package:raahein_final/navigation/stop.dart';
 import 'package:raahein_final/mainscreen/signout.dart';
 
-class MenuScreen extends StatelessWidget {
+class MenuScreen extends StatelessWidget with BaseAuth {
   final String imageUrl =
       "https://static01.nyt.com/images/2018/12/16/arts/16ellen-degeneres1/16ellen-degeneres1-superJumbo.jpg?quality=90&auto=webp";
 
@@ -125,10 +127,11 @@ class MenuScreen extends StatelessWidget {
             ListTile(
               
               onTap: ()  {
-                Navigator.push(context, 
+                /*Navigator.push(context, 
                MaterialPageRoute(
                  builder: (context) => Signout(),
-               ) );
+                 */
+               signOut();
         
               },
               leading: Icon(

@@ -14,13 +14,24 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+<<<<<<< HEAD
+  flare_flutter:
+    path: /Users/amitmunshi/Desktop/nechack/Raahein/raahein_final/flare_flutter
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+=======
   flare_flutter: 
+<<<<<<< HEAD
     path : /home/ayushi21/Raahein/raahein_final/flare_flutter
+=======
+    path : /Users/manaswitatyagi/Desktop/necfinal/Raahein/raahein_final/flare_flutter
+>>>>>>> f035dcbea6aa438cbb77e83ba6a7c22e497f0c3f
+>>>>>>> 7e8cee22c09c704fe85e6ce5e81f0387617575fb
   cupertino_icons: ^0.1.2
   provider: ^2.0.0
   audioplayers: ^0.7.8
