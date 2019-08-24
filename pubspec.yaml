@@ -1,4 +1,4 @@
-name: finalsplash
+name: loader
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -19,7 +19,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flare_flutter: ^1.5.5  
+
+
+
+  
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -28,6 +31,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  rflutter_alert: ^1.0.3  
+    
 
 
 # For information on the generic Dart part of this file, see the
@@ -43,8 +48,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-  - splash/logo.flr
-  #  - images/a_dot_ham.jpeg
+  - lib/assets/popup.png
+  - lib/assets/final.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -57,10 +62,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+      - family: Nunito
+        fonts:
+          - asset: lib/fonts/Nunito-SemiBold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

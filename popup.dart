@@ -17,19 +17,22 @@ class PopupDialog extends StatelessWidget {
             shrinkWrap: true,
             children: <Widget>[
               new Image.asset('lib/assets/popup.png',width:300.0,height:270.0),
-
-              new FloatingActionButton.extended( label: Container(
-child: Text("Scan",),
+new Padding(
+  padding: EdgeInsets.only(left: 70, bottom: 30, right:70),
+              child: FloatingActionButton.extended( label: Container(
+child: Text("Scan",
+style: TextStyle(color: Colors.black))
 
         ),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
 
   backgroundColor: Color(0xfff8cf2c),
   
-        icon: Icon(Icons.camera_alt),
+        icon: Icon(Icons.camera_alt,
+        color: Colors.black,),
         
         onPressed: null,
-      ),
+      ),)
             ]
 
 
