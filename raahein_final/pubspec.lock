@@ -116,11 +116,7 @@ packages:
   flare_flutter:
     dependency: "direct main"
     description:
-<<<<<<< HEAD
       path: "/Users/manaswitatyagi/Desktop/necfinal/Raahein/raahein_final/flare_flutter"
-=======
-      path: "/Users/amitmunshi/Desktop/nechack/Raahein/raahein_final/flare_flutter"
->>>>>>> 69c4c91962f36c3684fd099c7bd05f9284a98019
       relative: false
     source: path
     version: "1.5.5"

@@ -63,7 +63,7 @@ class MyHomePageState extends State<MyHomePage1>
     }
   }
 
-  int totalAmount = 0;
+  int totalAmount = 23;
   Razorpay _razorpay;
 
   @override
@@ -123,7 +123,7 @@ class MyHomePageState extends State<MyHomePage1>
           
           children: <Widget>[
             Container(
-              height: 180,
+              height: 150,
             ),
 
             Text('Scan to Pay!',

@@ -5,6 +5,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:location/location.dart' as prefix0;
 import 'package:raahein_final/combo/lib/requests/google_maps_requests.dart';
 import 'package:raahein_final/mainscreen/mainscreen.dart';
+import 'modal_sheet.dart';
 //import '../utils/core.dart';
 
 class Stops extends StatefulWidget {
@@ -29,7 +30,11 @@ class _MyHomePageState extends State<Stops> {
 
           ));
         },
-      child: Scaffold(body: Map()));
+      child: Scaffold(body: Map(),
+      appBar: AppBar(
+        title: Text("Find Nearest Bus Stop"),
+        backgroundColor: Colors.black,
+      ),));
   }
 }
 
@@ -42,6 +47,7 @@ class Map extends StatefulWidget {
 }
 
 class _MapState extends State<Map> {
+  Modal modal = new Modal();
   GoogleMapController mapController;
   GoogleMapsServices _googleMapsServices = GoogleMapsServices();
   TextEditingController locationController = TextEditingController();
@@ -204,15 +210,19 @@ class _MapState extends State<Map> {
                  ),
                 ),*/
                 new Container (
-                  child : FlatButton.icon(
-                    icon: Icon(Icons.directions_bus, color: Colors.white),
-                    label: Text("Marker"),
-                    color: Colors.black,
-                    onPressed: () =>
-                     _onAddMarkerButtonPressed(context),
-                  ),
-
-
+                  padding: EdgeInsets.only(bottom: 10, left: 140, right: 140),
+                  child: new SizedBox(
+                    height: 80,
+                    width: 80,
+                    child: RaisedButton.icon(
+                      color: Colors.blueAccent,
+                      icon: Icon(Icons.search, size: 40, color: Colors.white),
+                      label: Text(""),
+                      shape: CircleBorder(),
+                      onPressed: () => modal.mainBottomSheet(context),
+                    )
+                  )
+                 
                 ) 
               ],
                 )

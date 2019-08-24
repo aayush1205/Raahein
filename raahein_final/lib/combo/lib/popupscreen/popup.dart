@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:raahein_final/payment/payscreen.dart';
+import 'redirect.dart';
 
 class PopupDialog extends StatelessWidget {
   @override
@@ -19,18 +19,18 @@ class PopupDialog extends StatelessWidget {
               new Image.asset('assets/popup.png',width:300.0,height:270.0),
 
               new FloatingActionButton.extended( label: Container(
-child: Text("Scan",)
+child: Text("Confirm your Booking",)
 
         ),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
 
   backgroundColor: Color(0xfff8cf2c),
   
-        icon: Icon(Icons.camera_alt),
+        icon: Icon(Icons.directions_car),
         
         onPressed:(){ Navigator.push(context, 
         MaterialPageRoute(
-          builder: (context) => MyHomePage1(),
+          builder: (context) => MyHomePage4(),
 
         ));
         },
