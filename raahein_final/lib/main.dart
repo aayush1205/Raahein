@@ -21,13 +21,13 @@ class MyApp extends StatelessWidget {
       auth: BaseAuth(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-          home: MyHomePage(), theme: new ThemeData(primarySwatch: Colors.red)),
+          home: MyHomePageN(), theme: new ThemeData(primarySwatch: Colors.red)),
     );
   }
 }
  
 
-class MyHomePage extends StatelessWidget {
+class MyHomePageN extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final BaseAuth auth = ProviderN.of(context).auth;

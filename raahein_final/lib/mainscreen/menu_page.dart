@@ -8,6 +8,8 @@ import 'package:raahein_final/game/application.dart';
 import 'package:share/share.dart';
 import 'package:location/location.dart';
 import 'package:raahein_final/navigation/stop.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:http/http.dart';
 
 
 class MenuScreen extends StatelessWidget with BaseAuth {
@@ -77,15 +79,21 @@ class MenuScreen extends StatelessWidget with BaseAuth {
             ListTile(
               onTap: () {
                 var location= new Location();
+                /*
+                Geolocator().getCurrentPosition().then((currloc){
+                  set
+                }
+                */
+                  
                 var p,q;
-                location.onLocationChanged().listen((LocationData _currentLocation)
+                location.onLocationChanged().listen((LocationData _myLocation)
               {
-                   p= _currentLocation.latitude;
-                   q=_currentLocation.longitude;
+                   p= _myLocation.latitude;
+                   q= _myLocation.longitude;
               }
                 );
 
-               Share.share(' https://www.google.com/maps/search/?api=1&query=$p,$q'+"This is my current location");
+               Share.share('https://www.google.com/maps/search/?api=1&query=${p},${q}');
               },
               leading: Icon(
                 Icons.alarm,

@@ -253,7 +253,8 @@ class _MapState extends State<Map> {
               icon: BitmapDescriptor.defaultMarker));
         });
       }
-      void _onAddMarkerButtonPressed(context) { 
+      
+      void onAddMarkerButtonPressed(){ 
         count+=1;
     setState(() {
       
