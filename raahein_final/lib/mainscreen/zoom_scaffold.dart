@@ -7,6 +7,7 @@ import 'navi.dart';
 import 'package:raahein_final/payment/main.dart';
 import 'package:raahein_final/combo/lib/main.dart';
 import 'package:raahein_final/history/home_page.dart';
+import 'package:raahein_final/bus_list/main.dart';
 
 
 class ZoomScaffold extends StatefulWidget {
@@ -49,15 +50,15 @@ class _ZoomScaffoldState extends State<ZoomScaffold>
 
   
       child: new Scaffold(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.black,
         appBar: new AppBar(
-            title: Text("Hi Ayushi!", style: TextStyle(fontFamily: "Nunito", color: Colors.black)),
-            backgroundColor: Colors.white,
+            title: Text("Hi Ayushi!", style: TextStyle(fontFamily: "Nunito", color: Colors.amber)),
+            backgroundColor: Colors.black,
             elevation: 0.0,
             leading: new IconButton(
                 icon: Icon(
                   Icons.menu,
-                  color: Colors.black,
+                  color: Colors.blue,
                 ),
                 onPressed: () {
                   Provider.of<MenuController>(context, listen: true).toggle();
@@ -68,15 +69,15 @@ class _ZoomScaffoldState extends State<ZoomScaffold>
           index: 2,
           height: 50.0,
           items: <Widget>[
-            Icon(Icons.payment, size: 30, color: Colors.white),
-            Icon(Icons.directions_bus, size: 30, color: Colors.white),
-            Icon(Icons.home, size: 30, color: Colors.white),
-            Icon(Icons.location_searching, size: 30, color: Colors.white),
-            Icon(Icons.history, size: 30, color: Colors.white),
+            Icon(Icons.payment, size: 30, color: Colors.amber),
+            Icon(Icons.directions_bus, size: 30, color: Colors.blue),
+            Icon(Icons.home, size: 30, color: Colors.amber),
+            Icon(Icons.location_searching, size: 30, color: Colors.blue),
+            Icon(Icons.history, size: 30, color: Colors.amber),
           ],
           color: Colors.black,
-          buttonBackgroundColor: Colors.black,
-          backgroundColor: Colors.white,
+          buttonBackgroundColor: Colors.white,
+          backgroundColor: Colors.black,
           animationCurve: Curves.easeInOut,
           animationDuration: Duration(milliseconds: 600),
           onTap: (index) {
@@ -88,7 +89,7 @@ class _ZoomScaffoldState extends State<ZoomScaffold>
             }*/
           if (index==0){
             Navigator.push(context, MaterialPageRoute(
-                    builder: (context) => MyApp()
+                    builder: (context) => Buslist()
                     ),
                     );
           }
@@ -102,6 +103,13 @@ class _ZoomScaffoldState extends State<ZoomScaffold>
           else if(index==4){
             Navigator.push(context, MaterialPageRoute(
                     builder: (context) => History()
+                    ),
+                    );
+
+          }
+          else if(index==3){
+            Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Buslist()
                     ),
                     );
 

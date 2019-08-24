@@ -64,7 +64,7 @@ class _MapState extends State<Map> {
     
         
       
-      List<LatLng> item= [LatLng(28.4590692, 77.071084),LatLng(28.4472,77.0773),LatLng(28.477609634399414, 7.06947326660156),LatLng(28.477609634, 77.069473267) ];
+      List<LatLng> item= [LatLng(28.4590692, 77.071084),LatLng(28.4472,77.0773),LatLng(28.477609634399414, 77.06947326660156),LatLng(28.477609634, 77.069473267) ];
       var count = 0;
       static LatLng _lastMapPosition= LatLng(28.4590692, 77.071084);
       static LatLng _initialPosition;

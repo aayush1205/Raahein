@@ -26,9 +26,11 @@ var currentPage = images.length - 1.0;
     });
   });
 
-    return new Scaffold(
-       backgroundColor: Colors.white,
-       body: SingleChildScrollView(
+    return new Stack(
+       children: <Widget>[
+          Scaffold(
+              backgroundColor: Colors.black,
+              body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Padding(
@@ -46,14 +48,27 @@ var currentPage = images.length - 1.0;
                         return Container();
                       },
                     ),
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
+            // Padding(
+            //   padding: EdgeInsets.only(top: 30, bottom: 30),
+            //   child: Text("Welcome to Raahein!",
+            //   style: TextStyle(fontFamily: "Nunito",
+            //   fontSize: 24),
+            //   ),
+            // )
 
           ],
+          
         ),
       ),
+          )
+       ]
+          
+      
+
 
     );
   }

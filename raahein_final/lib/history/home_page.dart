@@ -1,18 +1,20 @@
 import "package:flutter/material.dart";
 import 'triangle_painter.dart';
 import 'package:raahein_final/mainscreen/mainscreen.dart';
+
 class History extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-        onWillPop: (){
+      onWillPop: (){
           Navigator.push(context,MaterialPageRoute(
             builder: (context) => Raahein(),
 
 
           ));
         },
-          child: Scaffold(
+
+          child: Scaffold(backgroundColor: Colors.black,
         resizeToAvoidBottomPadding: false,
         body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
@@ -66,32 +68,49 @@ class HomePageBodyState extends State<HomePageBody>
         children: <Widget>[
          
           Padding(
-            padding: const EdgeInsets.only(bottom: 18.0),
-            child: Align(
-              alignment: Alignment.center,
+            padding: const EdgeInsets.only(),
+            
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: Text(
-                      "RIDE HISTORY",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 25.0,
-                          fontFamily: "Nunito",)
-                    ),
-                  ),
 
                   Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Icon(Icons.history, size: 50,)
-                  ),
+              padding: EdgeInsets.only(
+              ),
+        
+        
+        ),
+                  
+                   Container(
+      constraints: new BoxConstraints.expand(
+        height: 247.0,
+      ),
+      alignment: Alignment.bottomCenter,
+      padding: new EdgeInsets.only(left: 16.0, bottom: 0.0),
+      decoration: new BoxDecoration(
+        image: new DecorationImage(
+          image: new AssetImage('assets/yolo.gif',
+          ),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: new Text('RIDE HISTORY',
+        style: new TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 25.0,
+          fontFamily: 'Nunito'
+        )
+      ),
+
+      
+    ),
+                  
+
+                  
                 ],
               ),
             ),
-          ),
+          
         ],
       ),
     );
@@ -110,7 +129,7 @@ class HomePageBodyState extends State<HomePageBody>
   Widget _buildMenuBar(BuildContext context) {
     return Container(
       height: 60.0,
-      color: Color(0xFF000000),
+      color: Color(0xFFFFFFFF),
       child: CustomPaint(
         painter: TrianglePainter(_pageController),
         child: Row(
@@ -118,20 +137,22 @@ class HomePageBodyState extends State<HomePageBody>
           children: <Widget>[
             Flexible(
               child: FlatButton(
+                color: Colors.white,
                 onPressed: _onSignInButtonPress,
                 child: Text(
                   "ACTIVE RIDE",
-                  style: TextStyle(color: Colors.white, fontSize: 16.0),
+                  style: TextStyle(color: Colors.black, fontSize: 16.0),
                 ),
               ),
             ),
             Container(height: 33.0, width: 1.0, color: Colors.white),
             Flexible(
               child: FlatButton(
+                color: Colors.white,
                 onPressed: _onSignUpButtonPress,
                 child: Text(
                   "PAST RIDES",
-                  style: TextStyle(color: Colors.white, fontSize: 16.0),
+                  style: TextStyle(color: Colors.black, fontSize: 16.0),
                 ),
               ),
             ),
@@ -156,7 +177,7 @@ class HomePageBodyState extends State<HomePageBody>
           
           new Card(
             color: Colors.black,
-                child: new Container(
+                child: new Container(color: Colors.white,
                   height: 100.0,
                   width: 300.0,
                   padding: new EdgeInsets.all(20.0),
@@ -165,7 +186,7 @@ class HomePageBodyState extends State<HomePageBody>
                     children: <Widget>[
                       Padding(
                         padding: EdgeInsets.only(right: 10),
-                      child: new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
+                      child: new Icon(Icons.directions_bus, color: Colors.black, size: 50.0,),
                       ),
                       Padding(
                       padding: EdgeInsets.only(right: 10),
@@ -175,14 +196,15 @@ class HomePageBodyState extends State<HomePageBody>
                             padding: EdgeInsets.only(right: 10, top:10, left:15),
                             child: Text('Dest: Kanhai Colony', 
                             style: TextStyle(fontFamily: "Nunito", 
-                            color: Colors.white),
+                            color: Colors.black),
                             ),
                           ),
                           Padding(
+                            
                             padding: EdgeInsets.only(right: 10, left: 0),
                             child: Text('Reach in: 10min', 
                             style: TextStyle(fontFamily: "Nunito", 
-                            color: Colors.white),
+                            color: Colors.black),
                             ),
                           )
                         ],
@@ -213,7 +235,7 @@ class HomePageBodyState extends State<HomePageBody>
           ),
           
           new Card(
-            color: Colors.black,
+            color: Colors.white,
                 child: new Container(
                   height: 100.0,
                   width: 300.0,
@@ -223,7 +245,7 @@ class HomePageBodyState extends State<HomePageBody>
                       
                       Padding(
                         padding: EdgeInsets.all(0),
-                      child: new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
+                      child: new Icon(Icons.directions_bus, color: Colors.black, size: 50.0,),
                       ),
                       Padding(
                       padding: EdgeInsets.all(0) ,
@@ -233,21 +255,21 @@ class HomePageBodyState extends State<HomePageBody>
                             padding: EdgeInsets.only(left: 30),
                             child: Text('Dest: Kanhai Colony', 
                             style: TextStyle(fontFamily: "Nunito", 
-                            color: Colors.white),
+                            color: Colors.black),
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.all(0),
                             child: Text('Duration: 20min', 
                             style: TextStyle(fontFamily: "Nunito", 
-                            color: Colors.white),
+                            color: Colors.black),
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.all(0),
                             child: Text('Date: 20/8/19', 
                             style: TextStyle(fontFamily: "Nunito", 
-                            color: Colors.white),
+                            color: Colors.black),
                             ),
                           )
                         ],
@@ -262,7 +284,7 @@ class HomePageBodyState extends State<HomePageBody>
               ),
 
               new Card(
-            color: Colors.black,
+            color: Colors.white,
                 child: new Container(
                   height: 100.0,
                   width: 300.0,
@@ -273,7 +295,7 @@ class HomePageBodyState extends State<HomePageBody>
                       
                       Padding(
                         padding: EdgeInsets.all(0),
-                      child: new Icon(Icons.directions_bus, color: Colors.white, size: 50.0,),
+                      child: new Icon(Icons.directions_bus, color: Colors.black, size: 50.0,),
                       ),
                       Padding(
                       padding: EdgeInsets.all(0) ,
@@ -283,21 +305,21 @@ class HomePageBodyState extends State<HomePageBody>
                             padding: EdgeInsets.only(left: 30),
                             child: Text('Dest: 91, Springboard', 
                             style: TextStyle(fontFamily: "Nunito", 
-                            color: Colors.white),
+                            color: Colors.black),
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.all(0),
                             child: Text('Duration: 20min', 
                             style: TextStyle(fontFamily: "Nunito", 
-                            color: Colors.white),
+                            color: Colors.black),
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.all(0),
                             child: Text('Date: 5/8/19', 
                             style: TextStyle(fontFamily: "Nunito", 
-                            color: Colors.white),
+                            color: Colors.black),
                             ),
                           )
                         ],
