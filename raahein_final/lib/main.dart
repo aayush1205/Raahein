@@ -111,9 +111,9 @@ class _MyHomePageState extends State<Raahein> with TickerProviderStateMixin {
         menuScreen: MenuScreen(),
         contentScreen: Layout(
             contentBuilder: (cc) => Container(
-                  color: Colors.grey[200],
+                  color: Colors.black,
                   child: Container(
-                    color: Colors.grey[200],
+                    color: Colors.black,
                   ),
                 )),
       ),
@@ -170,13 +170,13 @@ class LoginPageState extends State<LoginPage> {
     return Scaffold(
       
       appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: Text("NAMASKAR, USER!"),
+        backgroundColor: Colors.teal[800],
+        title: Text("NAMASTE, USER!"),
         
         centerTitle: true,
         
       ),
-      backgroundColor: Color(0xff252827),
+      backgroundColor: Colors.black,
       body: Container(
           child: Stack(
         children: <Widget>[
