@@ -26,8 +26,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
 =======
   flare_flutter: 
+<<<<<<< HEAD
+    path : /home/ayushi21/Raahein/raahein_final/flare_flutter
+=======
     path : /Users/manaswitatyagi/Desktop/necfinal/Raahein/raahein_final/flare_flutter
 >>>>>>> f035dcbea6aa438cbb77e83ba6a7c22e497f0c3f
+>>>>>>> 7e8cee22c09c704fe85e6ce5e81f0387617575fb
   cupertino_icons: ^0.1.2
   provider: ^2.0.0
   audioplayers: ^0.7.8
@@ -80,6 +84,7 @@ flutter:
    - assets/pic4.png
    - assets/pic5.png
    - assets/pic6.png
+   - assets/back.png
    - assets/iauto.png
    - assets/images/background/background.jpg
    - assets/images/background/background2.jpg

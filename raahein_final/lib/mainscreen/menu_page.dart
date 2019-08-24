@@ -16,7 +16,7 @@ class MenuScreen extends StatelessWidget with BaseAuth {
 
   /*final List<MenuItem> options = [
     MenuItem(Icons.navigation, 'Navigate'),
-    MenuItem(Icons.share, 'Share My Ride'),
+    MenuItem(Icons., 'Share My Ride'),
     MenuItem(Icons.games, 'Arcade'),
     MenuItem(Icons.card_giftcard, 'Rewards'),
     //MenuItem(Icons.format_list_bulleted, 'Orders'),
@@ -38,7 +38,7 @@ class MenuScreen extends StatelessWidget with BaseAuth {
             left: 35,
             bottom: 8,
             right: MediaQuery.of(context).size.width / 2.9),
-        color: Color(0xFF0000000),
+        color: Colors.white,
         child: Column(
           children: <Widget>[
             Row(
@@ -52,7 +52,7 @@ class MenuScreen extends StatelessWidget with BaseAuth {
                 Text(
                   'Ayushi',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 20,
                   ),
                 )
@@ -68,11 +68,11 @@ class MenuScreen extends StatelessWidget with BaseAuth {
               },
               leading: Icon(
                 Icons.navigation,
-                color: Colors.white,
+                color: Colors.blue,
                 size: 20,
               ),
               title: Text('Navigation',
-                  style: TextStyle(fontSize: 14, color: Colors.white)),
+                  style: TextStyle(fontSize: 14, color: Colors.black)),
             ),
             ListTile(
               onTap: () {
@@ -88,12 +88,12 @@ class MenuScreen extends StatelessWidget with BaseAuth {
                Share.share(' https://www.google.com/maps/search/?api=1&query=$p,$q'+"This is my current location");
               },
               leading: Icon(
-                Icons.share,
-                color: Colors.white,
+                Icons.alarm,
+                color: Colors.amber,
                 size: 20,
               ),
-              title: Text('Share My Ride',
-                  style: TextStyle(fontSize: 14, color: Colors.white)),
+              title: Text('Alert',
+                  style: TextStyle(fontSize: 14, color: Colors.black)),
             ),
             ListTile(
               onTap: () {
@@ -104,11 +104,11 @@ class MenuScreen extends StatelessWidget with BaseAuth {
               },
               leading: Icon(
                 Icons.games,
-                color: Colors.white,
+                color: Colors.blue,
                 size: 20,
               ),
               title: Text('Arcade',
-                  style: TextStyle(fontSize: 14, color: Colors.white)),
+                  style: TextStyle(fontSize: 14, color: Colors.black)),
             ),
             ListTile(
               onTap: () {
@@ -117,12 +117,13 @@ class MenuScreen extends StatelessWidget with BaseAuth {
               },
               leading: Icon(
                 Icons.card_giftcard,
-                color: Colors.white,
+                color: Colors.amber,
                 size: 20,
               ),
               title: Text('Rewards',
-                  style: TextStyle(fontSize: 14, color: Colors.white)),
+                  style: TextStyle(fontSize: 14, color: Colors.black)),
             ),
+            
             ListTile(
               
               onTap: ()  {
@@ -135,11 +136,11 @@ class MenuScreen extends StatelessWidget with BaseAuth {
               },
               leading: Icon(
                 Icons.account_circle,
-                color: Colors.white,
+                color: Colors.blue,
                 size: 20,
               ),
               title: Text('Sign Out',
-                  style: TextStyle(fontSize: 14, color: Colors.white)),
+                  style: TextStyle(fontSize: 14, color: Colors.black)),
             ),
             /*Column(
               children: options.map((item) {
@@ -163,22 +164,32 @@ class MenuScreen extends StatelessWidget with BaseAuth {
             ListTile(
               onTap: () {},
               leading: Icon(
+                Icons.star,
+                color: Colors.amber,
+                size: 20,
+              ),
+              title: Text('Rate the Driver',
+                  style: TextStyle(fontSize: 14, color: Colors.black)),
+            ),
+            ListTile(
+              onTap: () {},
+              leading: Icon(
                 Icons.settings,
-                color: Colors.white,
+                color: Colors.blue,
                 size: 20,
               ),
               title: Text('Settings',
-                  style: TextStyle(fontSize: 14, color: Colors.white)),
+                  style: TextStyle(fontSize: 14, color: Colors.black)),
             ),
             ListTile(
               onTap: () {},
               leading: Icon(
                 Icons.notifications,
-                color: Colors.white,
+                color: Colors.amber,
                 size: 20,
               ),
               title: Text('Notifications',
-                  style: TextStyle(fontSize: 14, color: Colors.white)),
+                  style: TextStyle(fontSize: 14, color: Colors.black)),
             ),
           ],
         ),
