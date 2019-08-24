@@ -26,7 +26,7 @@ class Signout extends StatelessWidget {
               child: Text("Sign Out"),
               onPressed: () async {
                 try {
-                  Auth auth = ProviderN.of(context).auth;
+                  BaseAuth auth = ProviderN.of(context).auth;
                   await auth.signOut();
                 } catch (e) {
                   print(e);
