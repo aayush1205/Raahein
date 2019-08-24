@@ -258,7 +258,7 @@ class _MapState extends State<Map> {
     setState(() {
       
       _markers.add(Marker(
-        // This marker id can be anything that uniquely identifies each marker.
+        
         markerId: MarkerId(item.toString()),
         position: item[count],
         infoWindow: InfoWindow(
@@ -283,7 +283,7 @@ class _MapState extends State<Map> {
       
       
       
-      //this method will convert list of doubles into latlng
+     
 
       List<LatLng> convertToLatLng(List points){
 
@@ -303,19 +303,19 @@ class _MapState extends State<Map> {
         int index = 0;
         int len = poly.length;
         int c = 0;
-    // repeating until all attributes are decoded
+  
         do {
           var shift = 0;
           int result = 0;
     
-          // for decoding value of one attribute
+         
           do {
             c = list[index] - 63;
             result |= (c & 0x1F) << (shift * 5);
             index++;
             shift++;
           } while (c >= 32);
-          /* if value is negetive then bitwise not the value */
+        
           if (result & 1 == 1) {
             result = ~result;
           }
@@ -323,7 +323,7 @@ class _MapState extends State<Map> {
           lList.add(result1);
         } while (index < len);
     
-    /*adding to previous value as done in encoding */
+  
         for (var i = 2; i < lList.length; i++) lList[i] += lList[i - 2];
     
         print(lList.toString());

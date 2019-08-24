@@ -8,7 +8,7 @@ class PopupDialog extends StatelessWidget {
     width: 200.0,
     height: 200.0,
     color: Colors.black,
-    alignment: Alignment.center, // where to position the child
+    alignment: Alignment.center, 
     child: Container(
       color: Colors.white,
       width: 310.0,
