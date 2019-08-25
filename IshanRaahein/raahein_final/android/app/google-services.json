@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "346514766826",
+    "firebase_url": "https://finallogin-20366.firebaseio.com",
+    "project_id": "finallogin-20366",
+    "storage_bucket": "finallogin-20366.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346514766826:android:1925fdb84d01f593",
+        "android_client_info": {
+          "package_name": "com.example.raahein_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346514766826-k242hmkov8e1fdnpjkspos85j05go07r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu-XX8gcnVNsyGsSYF8SiKWop_sH8tsJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346514766826-k242hmkov8e1fdnpjkspos85j05go07r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346514766826:android:f2a7a184ff2d773e",
+        "android_client_info": {
+          "package_name": "com.example.teddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346514766826-k242hmkov8e1fdnpjkspos85j05go07r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu-XX8gcnVNsyGsSYF8SiKWop_sH8tsJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346514766826-k242hmkov8e1fdnpjkspos85j05go07r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
