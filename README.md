@@ -3,9 +3,9 @@
 # RAAHEIN: From en-route to EndRoute
 
 <h2> Objective and Elaboration: </h2>
-A cross-platform capable application designed efficiently to modernise the Indian Public Transit while keeping a hefty focus on Practicality and Convenience.
+A cross-platform capable application designed to efficiently modernise the Indian Public Transit while keeping a hefty focus on Practicality and Convenience.
 
-The problem spectrum RAAHEIN tackles are the lack of a modern, practical, and reliant Transit structure and the absolute negligence of this system as a consequence of these flaws.
+The problem spectrum RAAHEIN tackles is the lack of a modern, practical, and reliant Transit structure and the absolute negligence of this system as a consequence of these flaws.
 
 RAAHEIN promises connectivity. With a stark focus on solving the Door-to-Door needs, RAAHEIN provides RIDE COMBOS--an intuitive idea which pitches booking combinations of public vehicle units to cover your long rides. A bright amalgamation of the features of Private and Public transportation. An Auto Rickshaw comes to pick you up, drops you off at the nearest Rail/Metro/Bus Station so that you can travel further. Another auto picks you up from the nearest station to your final destination and drops you off.
 
